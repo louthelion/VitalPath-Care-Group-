@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vitalpath-care-group.netlify.app/sitemap.xml
