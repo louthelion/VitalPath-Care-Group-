@@ -4,63 +4,77 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Learning Center | VitalPath Care Group</title>
-<style>*{box-sizing:border-box;margin:0;padding:0}:root{--bg:#071014;--teal:#7de3d1;--aqua:#46d7e9;--violet:#8f7cff;--text:#f6fbff;--muted:rgba(233,246,250,.78);--line:rgba(125,227,209,.38);--font:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}body{background:radial-gradient(circle at top right,rgba(143,124,255,.18),transparent 34%),var(--bg);color:var(--text);font-family:var(--font);line-height:1.7}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}a{text-decoration:none;color:inherit}.top{position:sticky;top:0;z-index:10;background:rgba(7,16,20,.95);border-bottom:1px solid var(--line)}.head{min-height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.logo{width:54px;height:54px;border-radius:18px;background:linear-gradient(135deg,var(--teal),var(--aqua),var(--violet));display:grid;place-items:center}.logo span{width:36px;height:36px;border-radius:12px;background:#071014;display:grid;place-items:center;color:var(--teal);font-weight:950}.name{font-weight:950;text-transform:uppercase;letter-spacing:1px;font-size:clamp(18px,4vw,30px)}.name b{background:linear-gradient(90deg,var(--teal),var(--aqua),var(--violet));-webkit-background-clip:text;color:transparent}.nav{display:flex;gap:8px}.nav a,.btn{border:1px solid var(--line);padding:10px 12px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}.hero{padding:86px 0;background:linear-gradient(90deg,rgba(7,16,20,.96),rgba(7,16,20,.72)),url('https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&w=1900&q=85');background-size:cover;background-position:center}.ey{font-size:13px;font-weight:950;text-transform:uppercase;letter-spacing:4px;color:var(--teal);margin-bottom:12px}h1{font-size:clamp(42px,8vw,78px);line-height:1.05;margin-bottom:18px}h2{font-size:clamp(28px,5vw,48px);margin:0 0 16px}h3{font-size:clamp(22px,3vw,34px);margin-bottom:10px}p,li{font-size:clamp(16px,2vw,20px);color:var(--muted);margin-bottom:15px}.section{padding:62px 0;border-bottom:1px solid rgba(125,227,209,.16)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(16,30,42,.92),rgba(7,16,20,.94));padding:24px;min-height:260px}.btn{display:inline-flex;background:linear-gradient(135deg,var(--teal),var(--aqua),var(--violet));color:#071014;margin-top:10px}.searchbar{margin:24px 0}.searchbar input{width:100%;border:1px solid var(--line);border-radius:16px;background:rgba(16,30,42,.82);color:var(--text);font:inherit;padding:16px 18px}.topic-list{display:grid;gap:10px;margin-top:14px}.topic{border:1px solid rgba(125,227,209,.28);border-radius:14px;padding:12px;background:rgba(16,30,42,.55)}.topic strong{color:#fff}.downloads{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.download{border:1px dashed var(--line);border-radius:18px;padding:20px;background:rgba(125,227,209,.06)}.challenge{border-left:5px solid var(--violet)}@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.nav{display:none}}@media(max-width:650px){.downloads{grid-template-columns:1fr}}@media(max-width:650px){.cards{grid-template-columns:1fr}.name{font-size:17px}}</style>
+<style>*{box-sizing:border-box;margin:0;padding:0}:root{--bg:#071014;--teal:#7de3d1;--aqua:#46d7e9;--violet:#8f7cff;--text:#f6fbff;--muted:rgba(233,246,250,.78);--line:rgba(125,227,209,.38);--font:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}html{scroll-behavior:smooth;scroll-padding-top:96px}body{background:radial-gradient(circle at top right,rgba(143,124,255,.18),transparent 34%),var(--bg);color:var(--text);font-family:var(--font);line-height:1.7}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}a{text-decoration:none;color:inherit}.top{position:sticky;top:0;z-index:10;background:rgba(7,16,20,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.head{min-height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.logo{width:50px;height:50px;border-radius:16px;background:linear-gradient(135deg,var(--teal),var(--aqua),var(--violet));display:grid;place-items:center;flex:0 0 auto}.logo span{width:34px;height:34px;border-radius:11px;background:#071014;display:grid;place-items:center;color:var(--teal);font-weight:950}.name{font-weight:950;text-transform:uppercase;letter-spacing:1px;font-size:clamp(17px,4vw,29px)}.name b{background:linear-gradient(90deg,var(--teal),var(--aqua),var(--violet));-webkit-background-clip:text;color:transparent}.nav{display:flex;gap:8px}.nav a,.btn{border:1px solid var(--line);padding:10px 12px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}.hero{padding:104px 0 86px;background:linear-gradient(90deg,rgba(7,16,20,.96),rgba(7,16,20,.72)),url('https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&w=1900&q=85');background-size:cover;background-position:center}.ey{font-size:13px;font-weight:950;text-transform:uppercase;letter-spacing:4px;color:var(--teal);margin-bottom:12px}h1{font-size:clamp(42px,8vw,78px);line-height:1.05;margin-bottom:18px}h2{font-size:clamp(28px,5vw,48px);line-height:1.12;margin:0 0 16px}h3{font-size:clamp(21px,3vw,32px);line-height:1.15;margin-bottom:10px}p,li{font-size:clamp(16px,2vw,20px);color:var(--muted);margin-bottom:15px}.section{padding:62px 0;border-bottom:1px solid rgba(125,227,209,.16)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(16,30,42,.92),rgba(7,16,20,.94));padding:24px;min-height:260px;display:flex;flex-direction:column;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.card:hover,.card:focus-visible{transform:translateY(-4px);border-color:var(--teal);box-shadow:0 18px 45px rgba(0,0,0,.24);outline:none}.card ul{padding-left:20px;margin:4px 0 12px}.card li{font-size:16px;margin-bottom:6px}.open{margin-top:auto;color:var(--teal);font-weight:950;text-transform:uppercase;letter-spacing:1px}.btn{display:inline-flex;background:linear-gradient(135deg,var(--teal),var(--aqua),var(--violet));color:#071014;margin-top:10px}.searchbar{margin:24px 0}.searchbar input{width:100%;border:1px solid var(--line);border-radius:16px;background:rgba(16,30,42,.82);color:var(--text);font:inherit;padding:16px 18px}.topic-list{display:grid;gap:10px;margin-top:14px}.topic{border:1px solid rgba(125,227,209,.28);border-radius:14px;padding:12px;background:rgba(16,30,42,.55);color:var(--muted)}.topic strong{color:#fff}.hub-intro{max-width:880px}.downloads{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.download{border:1px dashed var(--line);border-radius:18px;padding:20px;background:rgba(125,227,209,.06)}.challenge{border-left:5px solid var(--violet)}@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.nav{display:none}}@media(max-width:650px){html{scroll-padding-top:84px}.head{min-height:64px}.logo{width:42px;height:42px;border-radius:14px}.logo span{width:28px;height:28px}.hero{padding:96px 0 64px}.downloads,.cards{grid-template-columns:1fr}.name{font-size:16px;line-height:1.1}.card{min-height:auto}}</style>
 </head>
 <body>
 <header class="top">
 <div class="wrap head">
 <a class="brand" href="index.html">
-<div class="logo">
-<span>+</span>
-</div>
-<div class="name">VitalPath <b>Care Group</b>
-</div>
+<div class="logo"><span>+</span></div>
+<div class="name">VitalPath <b>Care Group</b></div>
 </a>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="articles.html">Articles</a>
-<a href="#health-education-library">Library</a>
-</nav>
+<nav class="nav"><a href="index.html">Home</a><a href="#daily-health-learning">Daily Learning</a><a href="#featured-learning-articles">Articles</a></nav>
 </div>
 </header>
 <section class="hero">
 <div class="wrap">
 <div class="ey">Learning Center</div>
-<h1>Learn before you request, apply, or coordinate.</h1>
-<p>VitalPath education helps families, facilities, care professionals, and drivers understand what information to prepare before moving forward.</p>
+<h1>Daily useful health education for families and caregivers.</h1>
+<p class="hub-intro">Explore practical learning about treatment preparation, nutrition, wellness routines, prevention, family health planning, and community reminders. This hub is education only and does not replace medical advice from a licensed clinician.</p>
 </div>
 </section>
 <main>
-<section class="section">
+<section class="section" id="daily-health-learning">
 <div class="wrap">
-<h2>Learning topics</h2>
+<div class="ey">Daily Health Learning</div>
+<h2>Short lessons for everyday care decisions.</h2>
+<p>Each topic card opens a focused section and includes examples families can use for daily conversations, appointment preparation, and healthy routines.</p>
 <div class="cards">
-<article class="card">
-<h3>Facility staffing readiness</h3>
-<p>What facilities should prepare before requesting coverage: worker type, shift details, duties, supervision, credential needs, contract requirements, and urgency.</p>
-</article>
-<article class="card">
-<h3>Care professional readiness</h3>
-<p>How CNA, HHA, RN, LPN, caregivers, companions, and sitters can prepare license/certificate details, CPR/BLS, references, resume, availability, and service area.</p>
-</article>
-<article class="card">
-<h3>Transportation safety</h3>
-<p>What families and drivers should prepare for non-emergency transportation: mobility needs, schedule, rider instructions, insurance, registration, and safe communication.</p>
-</article>
-<article class="card">
-<h3>Family care planning</h3>
-<p>How families can organize support notes, emergency contacts, appointment needs, wellness check-in questions, and care support priorities.</p>
-</article>
-<article class="card">
-<h3>Credential verification</h3>
-<p>Why verification, background screening, insurance, contracts, and documentation matter before a case or staffing request moves forward.</p>
-</article>
-<article class="card">
-<h3>Phase 1 vs active services</h3>
-<p>VitalPath can build forms, collect interest, and educate now, while active staffing or transportation work may require licensing, registration, contracts, and compliance.</p>
-</article>
+<a class="card" href="#treatment-education"><h3>Treatment Education</h3><p>Plain-language guidance for understanding care plans, follow-up instructions, and questions to ask providers.</p><ul><li>Medication list review</li><li>Discharge instructions</li><li>Appointment questions</li></ul><span class="open">Learn More →</span></a>
+<a class="card" href="#nutrition-tips"><h3>Nutrition Tips</h3><p>Simple food and hydration ideas that support heart health, diabetes awareness, energy, and family meal planning.</p><ul><li>Balanced plate examples</li><li>Sodium and sugar labels</li><li>Hydration reminders</li></ul><span class="open">Learn More →</span></a>
+<a class="card" href="#prevention-tips"><h3>Prevention Tips</h3><p>Practical reminders for screenings, fall prevention, vaccines, home safety, and early symptom conversations.</p><ul><li>Checkup preparation</li><li>Fall-risk walk-throughs</li><li>Family history notes</li></ul><span class="open">Learn More →</span></a>
+<a class="card" href="#wellness-reminders"><h3>Wellness Reminders</h3><p>Small daily habits that encourage sleep, movement, stress reduction, medication organization, and caregiver check-ins.</p><ul><li>Walking routines</li><li>Sleep wind-down plans</li><li>Mood and stress check-ins</li></ul><span class="open">Learn More →</span></a>
 </div>
-<a class="btn" href="articles.html">Read Articles</a>
+</div>
+</section>
+<section class="section" id="monthly-health-focus">
+<div class="wrap">
+<div class="ey">Monthly Health Focus</div>
+<h2>Monthly themes that make health education easier to follow.</h2>
+<div class="cards">
+<a class="card" href="#blood-pressure-month"><h3>Blood Pressure Month</h3><p>Learn how to track readings, reduce sodium, prepare provider questions, and build safe activity routines.</p><ul><li>Reading log examples</li><li>Heart-smart meals</li><li>When to call a clinician</li></ul><span class="open">Open →</span></a>
+<a class="card" href="#mental-health-month"><h3>Mental Health Month</h3><p>Daily education about stress, sleep, caregiver burnout, mood tracking, social support, and when to seek help.</p><ul><li>Stress warning signs</li><li>Sleep routines</li><li>Support contacts</li></ul><span class="open">Open →</span></a>
+<a class="card" href="#diabetes-awareness"><h3>Diabetes Awareness</h3><p>Family-friendly lessons about glucose logs, meal timing, foot care reminders, medication questions, and appointments.</p><ul><li>Carb awareness</li><li>Foot checks</li><li>Glucose discussion logs</li></ul><span class="open">Open →</span></a>
+<a class="card" href="#nutrition-month"><h3>Nutrition Month</h3><p>Practical nutrition education for grocery planning, reading labels, hydration, fiber, protein, and balanced meals.</p><ul><li>Budget meal ideas</li><li>Label reading</li><li>Snack planning</li></ul><span class="open">Open →</span></a>
+<a class="card" href="#family-wellness-month"><h3>Family Wellness Month</h3><p>Organize health goals, emergency contacts, checkup schedules, caregiver notes, and healthy routines as a family.</p><ul><li>Family wellness calendars</li><li>Shared goals</li><li>Care contact lists</li></ul><span class="open">Open →</span></a>
+</div>
+</div>
+</section>
+<section class="section" id="community-wellness-calendar">
+<div class="wrap">
+<div class="ey">Community Wellness Calendar</div>
+<h2>Calendar-style reminders for local and family wellness planning.</h2>
+<div class="cards">
+<a class="card" href="#monthly-health-topic"><h3>Monthly Health Topic</h3><p>Pick one theme each month so families can focus on achievable education and habit changes.</p><ul><li>Heart health</li><li>Stress reduction</li><li>Healthy aging</li></ul><span class="open">Open →</span></a>
+<a class="card" href="#screening-reminders"><h3>Screening & Checkup Reminders</h3><p>Prepare questions, medication lists, symptom notes, and preventive care topics before appointments.</p><ul><li>Annual visits</li><li>Blood pressure checks</li><li>Vision and dental reminders</li></ul><span class="open">Open →</span></a>
+<a class="card" href="#education-events"><h3>Education Events</h3><p>Plan workshops, resource tables, family learning nights, and caregiver information sessions.</p><ul><li>Nutrition basics</li><li>Fall prevention</li><li>Caregiver support</li></ul><span class="open">Open →</span></a>
+<a class="card" href="#family-health-tips"><h3>Family Health Tips</h3><p>Weekly prompts for hydration, activity, sleep, meal planning, medication organization, and safety checks.</p><ul><li>Sunday planning</li><li>Midweek check-ins</li><li>Weekend movement ideas</li></ul><span class="open">Open →</span></a>
+</div>
+</div>
+</section>
+<section class="section" id="featured-learning-articles">
+<div class="wrap">
+<div class="ey">Featured Learning Articles</div>
+<h2>A real learning hub for treatment, nutrition, prevention, and wellness.</h2>
+<p>These are evergreen education topics, not random media news. Use them as daily prompts for safer conversations with clinicians, caregivers, and family members.</p>
+<div class="cards">
+<a class="card" href="#article-appointment-prep"><h3>How to Prepare for a Medical Appointment</h3><p>Bring medications, recent symptoms, home readings, questions, insurance details, and a support person when needed.</p><ul><li>Question checklist</li><li>Medication bag review</li><li>Follow-up notes</li></ul><span class="open">Read Article →</span></a>
+<a class="card" href="#article-lower-sodium"><h3>Everyday Ways to Lower Sodium</h3><p>Compare labels, rinse canned foods, flavor with herbs, and plan lower-sodium swaps for common meals.</p><ul><li>Label examples</li><li>Flavor swaps</li><li>Restaurant questions</li></ul><span class="open">Read Article →</span></a>
+<a class="card" href="#article-fall-prevention"><h3>Fall Prevention at Home</h3><p>Review lighting, rugs, bathroom safety, footwear, mobility aids, and medication side effects with a professional.</p><ul><li>Room-by-room checklist</li><li>Safe footwear</li><li>Provider questions</li></ul><span class="open">Read Article →</span></a>
+<a class="card" href="#article-caregiver-burnout"><h3>Caregiver Burnout Warning Signs</h3><p>Notice fatigue, irritability, isolation, sleep problems, and missed self-care; build support before a crisis.</p><ul><li>Respite planning</li><li>Support calls</li><li>Stress tracking</li></ul><span class="open">Read Article →</span></a>
+<a class="card" href="#article-diabetes-logs"><h3>What to Track for Diabetes Visits</h3><p>Organize glucose readings, meal patterns, foot concerns, medication questions, activity, and symptoms.</p><ul><li>Glucose logs</li><li>Meal notes</li><li>Foot care reminders</li></ul><span class="open">Read Article →</span></a>
+<a class="card" href="#article-family-calendar"><h3>Build a Family Wellness Calendar</h3><p>Schedule checkups, medication refills, movement goals, meal planning, screenings, and family check-ins.</p><ul><li>Monthly theme</li><li>Weekly reminders</li><li>Shared contacts</li></ul><span class="open">Read Article →</span></a>
+</div>
 </div>
 </section>
 <section class="section" id="health-education-library">
@@ -68,238 +82,27 @@
 <div class="ey">Health Education Library</div>
 <h2>Searchable wellness topics organized by category.</h2>
 <p>Use the search field to filter nutrition, heart health, diabetes education, mental wellness, family health, senior wellness, and preventive care topics.</p>
-<div class="searchbar">
-<input id="librarySearch" type="search" placeholder="Search topics such as hydration, blood pressure, meal planning, sleep, caregivers..." aria-label="Search health education library">
-</div>
+<div class="searchbar"><input id="librarySearch" type="search" placeholder="Search topics such as hydration, blood pressure, meal planning, sleep, caregivers..." aria-label="Search health education library"></div>
 <div class="cards" id="libraryCards">
-<article class="card" data-keywords="nutrition meal planning hydration labels healthy eating">
-<h3>Nutrition Articles</h3>
-<div class="topic-list">
-<div class="topic">
-<strong>Balanced plates:</strong> simple portions for everyday meals.</div>
-<div class="topic">
-<strong>Hydration basics:</strong> water goals and low-sugar choices.</div>
-<div class="topic">
-<strong>Reading labels:</strong> sodium, added sugar, and fiber.</div>
-</div>
-</article>
-<article class="card" data-keywords="heart health blood pressure cholesterol walking sodium">
-<h3>Heart Health Articles</h3>
-<div class="topic-list">
-<div class="topic">
-<strong>Blood pressure tracking:</strong> what to record before appointments.</div>
-<div class="topic">
-<strong>Heart-smart movement:</strong> building safe walking routines.</div>
-<div class="topic">
-<strong>Sodium awareness:</strong> reducing salt without losing flavor.</div>
-</div>
-</article>
-<article class="card" data-keywords="diabetes education glucose carbs foot care medication">
-<h3>Diabetes Education</h3>
-<div class="topic-list">
-<div class="topic">
-<strong>Glucose logs:</strong> questions to discuss with clinicians.</div>
-<div class="topic">
-<strong>Carbohydrate awareness:</strong> planning consistent meals.</div>
-<div class="topic">
-<strong>Foot care reminders:</strong> daily checks and safety notes.</div>
-</div>
-</article>
-<article class="card" data-keywords="mental wellness stress sleep mindfulness mood caregivers">
-<h3>Mental Wellness Resources</h3>
-<div class="topic-list">
-<div class="topic">
-<strong>Stress reduction:</strong> breathing, boundaries, and support.</div>
-<div class="topic">
-<strong>Better sleep:</strong> calming routines and screen breaks.</div>
-<div class="topic">
-<strong>Caregiver check-ins:</strong> recognizing burnout signs.</div>
-</div>
-</article>
-<article class="card" data-keywords="family health children parents caregivers seniors planning">
-<h3>Family Health Resources</h3>
-<div class="topic-list">
-<div class="topic">
-<strong>Family wellness planning:</strong> shared goals and contact lists.</div>
-<div class="topic">
-<strong>Children and parents:</strong> appointment preparation.</div>
-<div class="topic">
-<strong>Caregivers:</strong> organizing notes and safety concerns.</div>
-</div>
-</article>
-<article class="card" data-keywords="senior wellness aging fall prevention mobility memory">
-<h3>Senior Wellness Resources</h3>
-<div class="topic-list">
-<div class="topic">
-<strong>Healthy aging:</strong> mobility, nutrition, and social connection.</div>
-<div class="topic">
-<strong>Fall prevention:</strong> home safety conversation starters.</div>
-<div class="topic">
-<strong>Medication lists:</strong> keeping records current.</div>
-</div>
-</article>
-<article class="card" data-keywords="preventive care screenings vaccines annual visit checklist">
-<h3>Preventive Care Resources</h3>
-<div class="topic-list">
-<div class="topic">
-<strong>Screening reminders:</strong> questions for primary care visits.</div>
-<div class="topic">
-<strong>Annual wellness visit:</strong> what to bring and track.</div>
-<div class="topic">
-<strong>Family history:</strong> documenting patterns and concerns.</div>
-</div>
-</article>
+<a class="card" href="#nutrition-tips" data-keywords="nutrition meal planning hydration labels healthy eating"><h3>Nutrition Articles</h3><div class="topic-list"><div class="topic"><strong>Balanced plates:</strong> simple portions for everyday meals.</div><div class="topic"><strong>Hydration basics:</strong> water goals and low-sugar choices.</div><div class="topic"><strong>Reading labels:</strong> sodium, added sugar, and fiber.</div></div><span class="open">Learn More →</span></a>
+<a class="card" href="#blood-pressure-month" data-keywords="heart health blood pressure cholesterol walking sodium"><h3>Heart Health Articles</h3><div class="topic-list"><div class="topic"><strong>Blood pressure tracking:</strong> what to record before appointments.</div><div class="topic"><strong>Heart-smart movement:</strong> building safe walking routines.</div><div class="topic"><strong>Sodium awareness:</strong> reducing salt without losing flavor.</div></div><span class="open">Learn More →</span></a>
+<a class="card" href="#diabetes-awareness" data-keywords="diabetes education glucose carbs foot care medication"><h3>Diabetes Education</h3><div class="topic-list"><div class="topic"><strong>Glucose logs:</strong> questions to discuss with clinicians.</div><div class="topic"><strong>Carbohydrate awareness:</strong> planning consistent meals.</div><div class="topic"><strong>Foot care reminders:</strong> daily checks and safety notes.</div></div><span class="open">Learn More →</span></a>
+<a class="card" href="#mental-health-month" data-keywords="mental wellness stress sleep mindfulness mood caregivers"><h3>Mental Wellness Resources</h3><div class="topic-list"><div class="topic"><strong>Stress reduction:</strong> breathing, boundaries, and support.</div><div class="topic"><strong>Better sleep:</strong> calming routines and screen breaks.</div><div class="topic"><strong>Caregiver check-ins:</strong> recognizing burnout signs.</div></div><span class="open">Learn More →</span></a>
+<a class="card" href="#family-wellness-month" data-keywords="family health children parents caregivers seniors planning"><h3>Family Health Resources</h3><div class="topic-list"><div class="topic"><strong>Family wellness planning:</strong> shared goals and contact lists.</div><div class="topic"><strong>Children and parents:</strong> appointment preparation.</div><div class="topic"><strong>Caregivers:</strong> organizing notes and safety concerns.</div></div><span class="open">Learn More →</span></a>
+<a class="card" href="#prevention-tips" data-keywords="senior wellness aging fall prevention mobility memory preventive care screenings vaccines annual visit checklist"><h3>Preventive & Senior Wellness</h3><div class="topic-list"><div class="topic"><strong>Fall prevention:</strong> home safety conversation starters.</div><div class="topic"><strong>Annual wellness visit:</strong> what to bring and track.</div><div class="topic"><strong>Medication lists:</strong> keeping records current.</div></div><span class="open">Learn More →</span></a>
 </div>
 </div>
 </section>
-<section class="section" id="wellness-resource-center">
-<div class="wrap">
-<div class="ey">Wellness Resource Center</div>
-<h2>Download-ready resource templates.</h2>
-<div class="downloads">
-<article class="download">
-<h3>Wellness Checklists</h3>
-<p>Appointment prep, medication list, preventive care, and home safety prompts.</p>
-</article>
-<article class="download">
-<h3>Health Trackers</h3>
-<p>Blood pressure, hydration, movement, sleep, mood, and glucose discussion logs.</p>
-</article>
-<article class="download">
-<h3>Goal Planning Worksheets</h3>
-<p>SMART goals, barriers, support contacts, and weekly reflection prompts.</p>
-</article>
-<article class="download">
-<h3>Healthy Habit Guides</h3>
-<p>Small-step routines for walking, sleep, stress reduction, and meal planning.</p>
-</article>
-<article class="download">
-<h3>Nutrition Planning Resources</h3>
-<p>Grocery planning, label reading, balanced plate, and snack planning guides.</p>
-</article>
-<article class="download">
-<h3>Wellness Journals</h3>
-<p>Daily gratitude, symptoms, activity, hydration, and caregiver observation pages.</p>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="healthy-recipe-center">
-<div class="wrap">
-<div class="ey">Healthy Recipe Center</div>
-<h2>Nutrition-focused meal ideas for everyday families.</h2>
-<div class="cards">
-<article class="card">
-<h3>Heart Healthy Recipes</h3>
-<p>Lower-sodium soups, grilled fish, bean bowls, and colorful vegetable sides.</p>
-</article>
-<article class="card">
-<h3>Weight Management Recipes</h3>
-<p>High-fiber breakfasts, portion-friendly lunches, lean proteins, and satisfying snacks.</p>
-</article>
-<article class="card">
-<h3>Family-Friendly Meals</h3>
-<p>Sheet-pan dinners, build-your-own wraps, slow cooker meals, and budget-friendly staples.</p>
-</article>
-<article class="card">
-<h3>Healthy Snacks</h3>
-<p>Fruit and yogurt, hummus plates, trail mix portions, and crunchy vegetable ideas.</p>
-</article>
-<article class="card">
-<h3>Nutrition-Focused Meal Ideas</h3>
-<p>Balanced plate examples for breakfast, lunch, dinner, and caregiving schedules.</p>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="monthly-wellness-challenges">
-<div class="wrap">
-<div class="ey">Monthly Wellness Challenges</div>
-<h2>Simple challenges that encourage steady habits.</h2>
-<div class="cards">
-<article class="card challenge">
-<h3>Drink More Water Challenge</h3>
-<p>Track daily water intake and replace one sugary drink with water.</p>
-</article>
-<article class="card challenge">
-<h3>Daily Walking Challenge</h3>
-<p>Choose a safe route and add minutes gradually each week.</p>
-</article>
-<article class="card challenge">
-<h3>Better Sleep Challenge</h3>
-<p>Create a consistent bedtime routine and reduce late screen time.</p>
-</article>
-<article class="card challenge">
-<h3>Healthy Eating Challenge</h3>
-<p>Add one fruit or vegetable to two meals each day.</p>
-</article>
-<article class="card challenge">
-<h3>Stress Reduction Challenge</h3>
-<p>Practice breathing, stretching, journaling, or quiet time for five minutes daily.</p>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="family-health-center">
-<div class="wrap">
-<div class="ey">Family Health Center</div>
-<h2>Education for children, parents, caregivers, and seniors.</h2>
-<div class="cards">
-<article class="card">
-<h3>Children</h3>
-<p>Healthy routines, hydration, sleep, activity, and appointment preparation.</p>
-</article>
-<article class="card">
-<h3>Parents</h3>
-<p>Family wellness calendars, school-year health planning, and nutrition conversations.</p>
-</article>
-<article class="card">
-<h3>Caregivers</h3>
-<p>Care notes, respite planning, safety observations, and communication tools.</p>
-</article>
-<article class="card">
-<h3>Seniors</h3>
-<p>Healthy aging, mobility, social connection, medication organization, and fall prevention.</p>
-</article>
-<article class="card">
-<h3>Family Wellness Planning</h3>
-<p>Shared goals, emergency contacts, appointment lists, and resource requests.</p>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="community-wellness-center">
-<div class="wrap">
-<div class="ey">Community Wellness Center</div>
-<h2>Programs and activities that support local health awareness.</h2>
-<div class="cards">
-<article class="card">
-<h3>Community Health Programs</h3>
-<p>Education tables, resource navigation, prevention reminders, and wellness planning support.</p>
-</article>
-<article class="card">
-<h3>Wellness Events</h3>
-<p>Hydration days, walking groups, caregiver resource days, and senior wellness sessions.</p>
-</article>
-<article class="card">
-<h3>Educational Workshops</h3>
-<p>Nutrition basics, preventive care preparation, family caregiving, and stress reduction.</p>
-</article>
-<article class="card">
-<h3>Health Awareness Activities</h3>
-<p>Monthly themes, challenges, checklists, and community engagement campaigns.</p>
-</article>
-</div>
-</div>
-</section>
-<script>const searchInput=document.getElementById('librarySearch');const libraryCards=[...document.querySelectorAll('#libraryCards .card')];if(searchInput){searchInput.addEventListener('input',()=>{const term=searchInput.value.trim().toLowerCase();libraryCards.forEach(card=>{const haystack=(card.textContent+' '+card.dataset.keywords).toLowerCase();card.style.display=haystack.includes(term)?'block':'none';});});}
-</script>
+
+<section class="section" id="monthly-health-details"><div class="wrap"><div class="ey">Monthly Topic Details</div><h2>Open each focus area for practical education examples.</h2><div class="cards"><a class="card" id="blood-pressure-month" href="#featured-learning-articles"><h3>Blood Pressure Month Details</h3><p>Keep a home reading log, record the time of day, note symptoms, bring your cuff to appointments when requested, and ask about safe activity and sodium goals.</p><ul><li>Morning and evening readings</li><li>Medication questions</li><li>Low-sodium meal swaps</li></ul><span class="open">Read Articles →</span></a><a class="card" id="mental-health-month" href="#featured-learning-articles"><h3>Mental Health Month Details</h3><p>Use daily check-ins for mood, sleep, appetite, stress, isolation, and caregiver strain. Keep crisis contacts visible and ask a professional about concerning changes.</p><ul><li>Sleep and mood log</li><li>Support-person list</li><li>Caregiver respite ideas</li></ul><span class="open">Read Articles →</span></a><a class="card" id="diabetes-awareness" href="#featured-learning-articles"><h3>Diabetes Awareness Details</h3><p>Prepare glucose notes, meal patterns, foot observations, medication questions, activity changes, and symptoms for discussion with a licensed clinician.</p><ul><li>Glucose trend notes</li><li>Foot care checklist</li><li>Meal timing examples</li></ul><span class="open">Read Articles →</span></a><a class="card" id="nutrition-month" href="#nutrition-tips"><h3>Nutrition Month Details</h3><p>Practice balanced plates, budget-friendly grocery planning, hydration routines, label reading, and snack planning for everyday family meals.</p><ul><li>Fiber and protein ideas</li><li>Added sugar checks</li><li>Weekly meal planning</li></ul><span class="open">Learn More →</span></a><a class="card" id="family-wellness-month" href="#community-wellness-calendar"><h3>Family Wellness Month Details</h3><p>Create a shared calendar for checkups, screenings, medication refills, movement goals, meal planning, and weekly family wellness conversations.</p><ul><li>Emergency contacts</li><li>Shared health goals</li><li>Caregiver notes</li></ul><span class="open">Open Calendar →</span></a></div></div></section>
+<section class="section" id="community-calendar-details"><div class="wrap"><div class="ey">Community Calendar Details</div><h2>Turn reminders into action steps.</h2><div class="cards"><a class="card" id="monthly-health-topic" href="#monthly-health-focus"><h3>Monthly Health Topic</h3><p>Select one theme, share simple education prompts, and review progress at the end of the month.</p><ul><li>Blood pressure</li><li>Nutrition</li><li>Family wellness</li></ul><span class="open">Open →</span></a><a class="card" id="screening-reminders" href="#prevention-tips"><h3>Screening & Checkup Reminders</h3><p>Gather medication lists, symptom notes, home readings, family history, and questions before preventive visits.</p><ul><li>Annual wellness visit</li><li>Dental and vision</li><li>Provider questions</li></ul><span class="open">Open →</span></a><a class="card" id="education-events" href="#featured-learning-articles"><h3>Education Events</h3><p>Use articles and checklists for workshops about nutrition, fall prevention, caregiver support, and appointment preparation.</p><ul><li>Family learning nights</li><li>Resource tables</li><li>Wellness workshops</li></ul><span class="open">Open →</span></a><a class="card" id="family-health-tips" href="#family-wellness-month"><h3>Family Health Tips</h3><p>Plan weekly reminders for movement, hydration, sleep, meal prep, medication organization, and supportive check-ins.</p><ul><li>Weekly routine prompts</li><li>Shared calendars</li><li>Safety checks</li></ul><span class="open">Open →</span></a></div></div></section>
+<section class="section" id="article-details"><div class="wrap"><div class="ey">Article Previews</div><h2>Daily education article starters.</h2><div class="cards"><a class="card" id="article-appointment-prep" href="#treatment-education"><h3>Medical Appointment Preparation</h3><p>Write down the top three concerns, bring updated medications, confirm follow-up steps, and ask who to call with questions.</p><span class="open">Learn More →</span></a><a class="card" id="article-lower-sodium" href="#nutrition-tips"><h3>Lower-Sodium Choices</h3><p>Compare serving sizes, choose herbs and citrus, rinse canned foods, and ask restaurants about lower-sodium options.</p><span class="open">Learn More →</span></a><a class="card" id="article-fall-prevention" href="#prevention-tips"><h3>Home Fall Prevention</h3><p>Check lighting, clear walkways, review footwear, discuss mobility aids, and ask about medication side effects.</p><span class="open">Learn More →</span></a><a class="card" id="article-caregiver-burnout" href="#wellness-reminders"><h3>Caregiver Burnout</h3><p>Track stress signals, schedule rest, ask for help early, and keep important support contacts easy to find.</p><span class="open">Learn More →</span></a><a class="card" id="article-diabetes-logs" href="#diabetes-awareness"><h3>Diabetes Visit Logs</h3><p>Bring glucose notes, meals, activity, symptoms, medication questions, and foot concerns to professional visits.</p><span class="open">Learn More →</span></a><a class="card" id="article-family-calendar" href="#family-wellness-month"><h3>Family Wellness Calendar</h3><p>Put checkups, screenings, refills, health goals, meal planning, and family check-ins on a shared monthly calendar.</p><span class="open">Learn More →</span></a></div></div></section>
+<section class="section" id="treatment-education"><div class="wrap"><div class="ey">Treatment Education</div><h2>Questions and notes to bring to every care conversation.</h2><p>Track diagnoses, medications, symptoms, side effects, follow-up instructions, emergency warning signs, and the best contact for questions after a visit.</p></div></section>
+<section class="section" id="nutrition-tips"><div class="wrap"><div class="ey">Nutrition Tips</div><h2>Build meals around simple, realistic choices.</h2><p>Start with vegetables or fruit, add lean protein, choose high-fiber carbohydrates when appropriate, watch sodium and added sugar, and keep hydration visible.</p></div></section>
+<section class="section" id="prevention-tips"><div class="wrap"><div class="ey">Prevention Tips</div><h2>Use reminders before small issues become bigger concerns.</h2><p>Discuss screenings, vaccines, fall risks, family history, dental and vision care, symptom changes, and annual wellness visits with licensed professionals.</p></div></section>
+<section class="section" id="wellness-reminders"><div class="wrap"><div class="ey">Wellness Reminders</div><h2>Small daily routines can support long-term wellness.</h2><p>Set reminders for movement, water, sleep routines, medication organization, stress breaks, caregiver support, and weekly family check-ins.</p></div></section>
 </main>
-<footer class="section">
-<div class="wrap">
-<p>© 2026 VitalPath Care Group · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-use.html">Terms of Use</a>
-</p>
-</div>
-</footer>
+<footer class="section"><div class="wrap"><p>© 2026 VitalPath Care Group · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-use.html">Terms of Use</a></p></div></footer>
+<script>const searchInput=document.getElementById('librarySearch');const libraryCards=[...document.querySelectorAll('#libraryCards .card')];if(searchInput){searchInput.addEventListener('input',()=>{const term=searchInput.value.trim().toLowerCase();libraryCards.forEach(card=>{const haystack=(card.textContent+' '+(card.dataset.keywords||'')).toLowerCase();card.style.display=haystack.includes(term)?'flex':'none';});});}</script>
 </body>
 </html>
