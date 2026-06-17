@@ -1,6 +1,6 @@
 # VitalPath Care Group
 
-Care support, staffing request, caregiver application, and transportation coordination platform.
+Care support, staffing request, caregiver application, transportation coordination, healthcare news, and education platform.
 
 ## Website pages
 
@@ -13,6 +13,7 @@ Care support, staffing request, caregiver application, and transportation coordi
 - `driver-application.html`
 - `family-care-request.html`
 - `learning-center.html`
+- `medical-news.html`
 - `articles.html`
 - `article-archive.html`
 - `blog.html`
@@ -23,4 +24,8 @@ Care support, staffing request, caregiver application, and transportation coordi
 
 ## Phase 1 note
 
-VitalPath Care Group is presented as a care support, staffing-request, caregiver application, and transportation coordination platform. Services may depend on verification, contracts, licensing, registration, insurance, background screening, and availability.
+VitalPath Care Group is presented as a care support, staffing-request, caregiver application, transportation coordination, healthcare news, and education platform. Services may depend on verification, contracts, licensing, registration, insurance, background screening, and availability.
+
+## Education and news note
+
+The healthcare news and medical technology content is for general education and awareness only. It is not medical advice, legal advice, staffing approval, transportation approval, emergency help, or a guarantee of service.
