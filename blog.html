@@ -1,13 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Blog & Articles | VitalPath Care Group LLC</title>
-<meta name="description" content="Featured articles, categories, search, author information, dates, and related posts.">
-<style>
+<!doctype html><html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Blog | VitalPath Care Group LLC</title><meta name="description" content="Short company and community blog posts separate from articles."><style>
 *{box-sizing:border-box;margin:0;padding:0}:root{--dark:#061016;--ink:#f7fbff;--muted:rgba(235,246,250,.78);--panel:rgba(10,25,35,.86);--panel2:rgba(15,38,52,.92);--teal:#78ead7;--aqua:#38d6ef;--gold:#ffd166;--violet:#9b7cff;--blue:#a9ddff;--line:rgba(120,234,215,.28);--shadow:0 26px 80px rgba(0,0,0,.38);--font:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}html{scroll-behavior:smooth}body{font-family:var(--font);line-height:1.65;color:var(--ink);background:radial-gradient(circle at 10% 5%,rgba(56,214,239,.18),transparent 30%),radial-gradient(circle at 85% 8%,rgba(155,124,255,.18),transparent 28%),linear-gradient(180deg,#061016,#091721 48%,#050b10)}a{color:inherit;text-decoration:none}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.top{position:sticky;top:0;z-index:50;background:rgba(6,16,22,.88);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.head{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:1000;letter-spacing:-.02em}.logo{width:52px;height:52px;border-radius:18px;background:conic-gradient(from 180deg,var(--teal),var(--aqua),var(--violet),var(--gold),var(--teal));display:grid;place-items:center;color:#061016;font-weight:1000;font-size:28px;box-shadow:0 0 34px rgba(56,214,239,.24)}.nav,.social{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}.nav a,.social a{padding:9px 10px;border-radius:999px;color:var(--blue);font-weight:850;font-size:13px}.nav a:hover,.social a:hover{background:rgba(120,234,215,.12);color:#fff}.hero{position:relative;overflow:hidden;min-height:720px;display:grid;align-items:center;padding:92px 0;background:linear-gradient(90deg,rgba(6,16,22,.98),rgba(6,16,22,.58),rgba(6,16,22,.92)),var(--hero);background-size:cover;background-position:center}.hero:before{content:"";position:absolute;inset:0;background-image:var(--hero2),var(--hero3);background-size:cover;animation:panels 18s infinite;opacity:.34}.hero>*{position:relative}.hero-grid{display:grid;grid-template-columns:1.07fr .93fr;gap:42px;align-items:center}.ey{font-size:13px;text-transform:uppercase;letter-spacing:2.8px;font-weight:1000;color:var(--teal);margin-bottom:12px}.kicker{display:inline-flex;gap:8px;align-items:center;padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(120,234,215,.1);color:var(--teal);font-weight:900;margin-bottom:18px}h1{font-size:clamp(42px,7.2vw,84px);line-height:.98;margin-bottom:20px;letter-spacing:-.055em}h2{font-size:clamp(30px,4.2vw,54px);line-height:1.05;margin-bottom:14px;letter-spacing:-.04em}h3{font-size:clamp(21px,2.4vw,30px);line-height:1.12;margin-bottom:10px}p,li{font-size:18px;color:var(--muted);margin-bottom:14px}.lead{font-size:22px;max-width:900px}.section{padding:86px 0}.soft{background:linear-gradient(180deg,rgba(10,25,35,.54),rgba(10,25,35,.18))}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid.two{grid-template-columns:repeat(2,1fr)}.grid.four{grid-template-columns:repeat(4,1fr)}.card,.feature{position:relative;background:linear-gradient(180deg,var(--panel2),rgba(6,16,22,.96));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);overflow:hidden;transition:.25s transform,.25s border-color}.card:hover,.feature:hover{transform:translateY(-6px);border-color:rgba(120,234,215,.6)}.card img,.feature img{width:100%;height:205px;object-fit:cover;border-radius:20px;margin-bottom:18px;border:1px solid rgba(255,255,255,.12)}.icon{font-size:34px;width:62px;height:62px;display:grid;place-items:center;border-radius:20px;background:rgba(120,234,215,.12);border:1px solid var(--line);margin-bottom:16px}.meta{color:var(--blue);font-size:14px;font-weight:850}.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:999px;background:linear-gradient(135deg,var(--teal),var(--aqua),var(--violet));color:#061016;font-weight:1000;border:1px solid rgba(255,255,255,.22)}.btn.alt,.btn.light{background:rgba(255,255,255,.04);color:#fff;border:1px solid var(--line)}.statbar{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.stat{padding:20px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid var(--line)}.stat strong{display:block;font-size:30px;color:var(--teal)}.intro{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.photo{min-height:430px;border-radius:32px;background:var(--photo);background-size:cover;background-position:center;box-shadow:var(--shadow);border:1px solid var(--line)}.list{display:grid;gap:10px;margin-top:18px}.list div,.pill{padding:14px 16px;border-left:4px solid var(--teal);background:rgba(120,234,215,.10);border-radius:16px;font-weight:850}.notice{background:rgba(155,124,255,.11);border:1px solid var(--line);border-radius:22px;padding:22px;color:var(--muted);margin-top:22px}.filters{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.chip{border:1px solid var(--line);border-radius:999px;padding:10px 14px;color:var(--blue);font-weight:850;background:rgba(255,255,255,.04)}.searchbox{width:100%;padding:16px 18px;border-radius:18px;border:1px solid var(--line);background:#0a1a24;color:#fff;font:inherit;margin:14px 0 24px}.timeline{display:grid;gap:16px}.timeline article{padding:22px;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.05)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:20px;border-radius:22px;border:1px solid var(--line);background:rgba(120,234,215,.08)}.footer{background:#03080c;border-top:1px solid var(--line);padding:54px 0}.footer p,.footer a{color:rgba(255,255,255,.78);font-size:15px}.footlinks{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0}@keyframes panels{0%,32%{clip-path:inset(0 0 0 0)}33%,65%{clip-path:inset(0 0 0 38%)}66%,100%{clip-path:inset(0 42% 0 0)}}@media(max-width:980px){.head{align-items:flex-start;flex-direction:column;padding:14px 0}.nav{justify-content:flex-start}.hero{min-height:auto;padding:70px 0}.hero-grid,.intro,.grid,.grid.two,.grid.four,.statbar,.steps{grid-template-columns:1fr}.section{padding:56px 0}.photo{min-height:280px}.btns{display:grid}.btn{width:100%}h1{font-size:44px}}
-</style>
+.article-body h3{margin-top:24px}.article-body ul{margin-left:22px;margin-bottom:18px}.schedule{display:inline-block;margin:14px 0 22px;padding:10px 14px;border:1px solid var(--line);border-radius:999px;color:var(--teal);font-weight:900;background:rgba(120,234,215,.1)}.resource-card{min-height:330px;display:flex;flex-direction:column}.resource-card .btns{margin-top:auto}</style>
 </head>
 <body>
 <header class="top">
@@ -20,88 +14,197 @@
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="learning-center.html">Learning Center</a>
-<a href="articles.html">Resources</a>
-<a href="vitalpath-news.html">News</a>
+<a href="articles.html">Articles</a>
 <a href="blog.html">Blog</a>
+<a href="vitalpath-news.html">VitalPath News</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 </nav>
-<div class="social">
-<a href="https://www.facebook.com/share/1EQircwv9P/?mibextid=wwXIfr">Facebook</a>
-<a href="https://www.instagram.com/vitalpathcaregroup/">Instagram</a>
-<a href="https://www.linkedin.com/company/vitalpath-care-group-llc/">LinkedIn</a>
-</div>
 </div>
 </header>
 <section class="hero" style="--hero:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1900&q=85')">
 <div class="wrap">
-<div class="ey">Blog & Articles</div>
-<h1>Stories, practical updates, community notes, and educational article cards.</h1>
-<p class="lead">Browse featured posts by category, search topics, and discover related learning resources.</p>
-<input class="searchbox" placeholder="Search blog posts...">
-<div class="filters">
-<span class="chip">Company</span>
-<span class="chip">Community</span>
-<span class="chip">Families</span>
-<span class="chip">Facilities</span>
-<span class="chip">Care Professionals</span>
-</div>
-</div>
+<div class="ey">Blog</div>
+<h1>Short company and community posts from VitalPath.</h1>
+<p class="lead">New blog posts every other day.</p>
+<span class="schedule">New blog posts published every other day.</span>
+<input class="searchbox" placeholder="Search blog posts..."></div>
 </section>
 <main>
-<section class="section">
+<section id="blog-list" class="section">
 <div class="wrap">
-<h2>Featured article</h2>
-<article class="feature">
-<img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=85" alt="Healthcare team">
-<span class="meta">VitalPath Education Team • June 2026</span>
-<h3>Why education should come before every care support request</h3>
-<p>Families and organizations make better decisions when they first understand terms, boundaries, process steps, and practical readiness questions.</p>
+<div class="grid">
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 1, 2026</span>
+<h3>Welcome to VitalPath Care Group LLC</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#welcome-to-vitalpath-care-group-llc">Read Blog Post</a>
+</div>
 </article>
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 2, 2026</span>
+<h3>Why VitalPath Is Building a Care Support Learning Center</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#why-vitalpath-is-building-a-care-support-learning-center">Read Blog Post</a>
+</div>
+</article>
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 3, 2026</span>
+<h3>How Families Can Start Organizing Care Questions</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#how-families-can-start-organizing-care-questions">Read Blog Post</a>
+</div>
+</article>
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 4, 2026</span>
+<h3>Building a Safer Path for Workers, Families, and Facilities</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#building-a-safer-path-for-workers-families-and-facilities">Read Blog Post</a>
+</div>
+</article>
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 5, 2026</span>
+<h3>Why VitalPath Starts With Education First</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#why-vitalpath-starts-with-education-first">Read Blog Post</a>
+</div>
+</article>
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 6, 2026</span>
+<h3>Helping Care Workers Prepare Before Applying</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#helping-care-workers-prepare-before-applying">Read Blog Post</a>
+</div>
+</article>
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 7, 2026</span>
+<h3>Why Transportation Planning Matters for Families</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#why-transportation-planning-matters-for-families">Read Blog Post</a>
+</div>
+</article>
+<article class="feature resource-card">
+<span class="meta">Company Blog • June 8, 2026</span>
+<h3>VitalPath’s Step-by-Step Growth Plan</h3>
+<p>A short community-focused update from VitalPath about education, preparation, and responsible growth.</p>
+<div class="btns">
+<a class="btn" href="#vitalpath-s-step-by-step-growth-plan">Read Blog Post</a>
+</div>
+</article>
+</div>
 </div>
 </section>
 <section class="section soft">
 <div class="wrap">
-<h2>Latest posts</h2>
-<div class="grid">
-<article class="card">
-<span class="meta">Community • June 2026</span>
-<h3>Building a support conversation checklist</h3>
-<p>Simple prompts to help families prepare for calls and follow-up.</p>
+<div class="timeline">
+<article id="welcome-to-vitalpath-care-group-llc" class="card article-body">
+<h2>Welcome to VitalPath Care Group LLC</h2>
+<p class="meta">Company Blog • June 1, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
 </article>
-<article class="card">
-<span class="meta">Facilities • June 2026</span>
-<h3>What to include in staffing interest notes</h3>
-<p>Role type, timing, location, contract needs, and follow-up details.</p>
+<article id="why-vitalpath-is-building-a-care-support-learning-center" class="card article-body">
+<h2>Why VitalPath Is Building a Care Support Learning Center</h2>
+<p class="meta">Company Blog • June 2, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
 </article>
-<article class="card">
-<span class="meta">Related article</span>
-<h3>Learning Center starter path</h3>
-<p>Move from beginner guides to checklists, FAQs, and request forms.</p>
+<article id="how-families-can-start-organizing-care-questions" class="card article-body">
+<h2>How Families Can Start Organizing Care Questions</h2>
+<p class="meta">Company Blog • June 3, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
+</article>
+<article id="building-a-safer-path-for-workers-families-and-facilities" class="card article-body">
+<h2>Building a Safer Path for Workers, Families, and Facilities</h2>
+<p class="meta">Company Blog • June 4, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
+</article>
+<article id="why-vitalpath-starts-with-education-first" class="card article-body">
+<h2>Why VitalPath Starts With Education First</h2>
+<p class="meta">Company Blog • June 5, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
+</article>
+<article id="helping-care-workers-prepare-before-applying" class="card article-body">
+<h2>Helping Care Workers Prepare Before Applying</h2>
+<p class="meta">Company Blog • June 6, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
+</article>
+<article id="why-transportation-planning-matters-for-families" class="card article-body">
+<h2>Why Transportation Planning Matters for Families</h2>
+<p class="meta">Company Blog • June 7, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
+</article>
+<article id="vitalpath-s-step-by-step-growth-plan" class="card article-body">
+<h2>VitalPath’s Step-by-Step Growth Plan</h2>
+<p class="meta">Company Blog • June 8, 2026 • 3 min read</p>
+<p>VitalPath Care Group LLC is building with education first. This post shares a brief company and community perspective on organizing care questions, supporting safer communication, and helping visitors understand what VitalPath can and cannot do as services develop.</p>
+<p>Our goal is to make preparation easier for families, workers, and facilities without overstating active services. Clear intake, careful wording, and realistic expectations help everyone approach the next conversation with more confidence.</p>
+<div class="notice">Educational information only. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</div>
+<div class="btns">
+<a class="btn alt" href="#blog-list">Back to Blog</a>
+</div>
 </article>
 </div>
 </div>
 </section>
 </main>
 <footer class="footer">
-<div class="wrap">
-<strong>VitalPath Care Group LLC</strong>
+<div class="wrap"><strong>VitalPath Care Group LLC</strong>
 <div class="footlinks">
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
 <a href="learning-center.html">Learning Center</a>
-<a href="vitalpath-news.html">News Center</a>
+<a href="articles.html">Articles</a>
 <a href="blog.html">Blog</a>
-<a href="articles.html">Resource Library</a>
+<a href="vitalpath-news.html">VitalPath News</a>
 <a href="contact.html">Contact</a>
 <a href="privacy-policy.html">Privacy Policy</a>
 <a href="terms-of-use.html">Terms of Use</a>
 </div>
-<p>Website: <a href="https://vitalpathcaregroup.com">vitalpathcaregroup.com</a> • Email: <a href="mailto:contact@vitalpathcaregroup.com">contact@vitalpathcaregroup.com</a> • Phone: <a href="tel:+18008279016">+1 800-827-9016</a>
+<p>Website: <a href="https://vitalpathcaregroup.com">vitalpathcaregroup.com</a>
+• Email: <a href="mailto:contact@vitalpathcaregroup.com">contact@vitalpathcaregroup.com</a>
+• Phone: <a href="tel:+18008279016">+1 800-827-9016</a>
 <br>1317 Edgewater Dr Ste 3184, Orlando, FL 32804</p>
-<p>VitalPath Care Group LLC provides care support education, family support intake, non-medical support preparation, staffing-request intake, caregiver interest forms, transportation coordination interest, and healthcare education. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</p>
+<p>VitalPath Care Group LLC provides care support education, intake, request organization, non-medical support preparation, worker interest forms, transportation coordination interest, and healthcare education. Active services may depend on AHCA registration, licensing, credential verification, background screening, insurance, contracts, and availability.</p>
 <p>© 2026 VitalPath Care Group LLC.</p>
 </div>
 </footer>
-</body>
-</html>
+</body></html>
