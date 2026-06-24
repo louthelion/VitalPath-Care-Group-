@@ -1,1 +1,489 @@
-<!doctype html><html><head><meta charset="utf-8"><title>VitalPath</title></head><body><h1>VitalPath Care Group</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitalPath Care Group LLC</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+  background:#061016;
+  color:#fff;
+  line-height:1.5;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:92%;
+  max-width:1200px;
+  margin:auto;
+}
+
+header{
+  position:sticky;
+  top:0;
+  background:rgba(6,16,22,.95);
+  border-bottom:1px solid rgba(104,240,225,.25);
+  backdrop-filter:blur(15px);
+  z-index:100;
+}
+
+.nav{
+  height:90px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo-icon{
+  width:55px;
+  height:75px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#8a7cff,#52bdf7,#68f0e1);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#061016;
+  font-size:35px;
+  font-weight:bold;
+}
+
+.logo-text{
+  font-size:30px;
+  font-weight:bold;
+  line-height:1.1;
+}
+
+.menu{
+  padding:15px 25px;
+  border-radius:50px;
+  border:1px solid rgba(104,240,225,.35);
+  background:#102027;
+  font-size:24px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.hero{
+  position:relative;
+  padding:50px 0 80px;
+  background-size:cover;
+  background-position:center;
+  transition:background-image 1s ease;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(6,16,22,.55),rgba(6,16,22,.88));
+  z-index:1;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size:4px 4px;
+  opacity:.28;
+  z-index:2;
+}
+
+.hero .container{
+  position:relative;
+  z-index:3;
+}
+
+.hero-small,
+.section-title{
+  color:#7ff3e4;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:70px;
+  line-height:.95;
+  margin-bottom:25px;
+}
+
+.hero p{
+  font-size:28px;
+  color:#d4d9dd;
+  margin-bottom:35px;
+}
+
+.button{
+  display:block;
+  text-align:center;
+  margin-bottom:18px;
+  padding:22px;
+  border-radius:50px;
+  background:linear-gradient(135deg,#68f0e1,#52bdf7,#8a7cff);
+  color:#061016;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.button.dark{
+  background:#102027;
+  border:1px solid rgba(104,240,225,.35);
+  color:white;
+}
+
+.card{
+  background:linear-gradient(180deg,#172126,#0b1216);
+  border:1px solid rgba(104,240,225,.25);
+  border-radius:30px;
+  padding:30px;
+  margin-top:25px;
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.logo-card{
+  text-align:center;
+  padding:50px 20px;
+}
+
+.big-cross{
+  width:150px;
+  height:150px;
+  margin:auto auto 25px;
+  border-radius:45px;
+  background:linear-gradient(135deg,#d5e8b5,#50d7e8,#857cff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:100px;
+  color:#061016;
+  font-weight:bold;
+}
+
+.logo-card h2{
+  font-size:48px;
+  letter-spacing:8px;
+}
+
+.logo-card p{
+  letter-spacing:12px;
+  color:#d7e0e2;
+}
+
+.small-card h3{
+  font-size:52px;
+}
+
+.small-card p{
+  font-size:24px;
+  color:#bdc7cf;
+}
+
+.section{
+  padding:80px 0;
+}
+
+.section h2{
+  font-size:60px;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.icon-box{
+  width:90px;
+  height:90px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#8af8de,#837dff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#061016;
+  font-size:32px;
+  font-weight:bold;
+  margin-bottom:25px;
+}
+
+.path-card h3,
+.blog-card h3{
+  font-size:38px;
+  margin-bottom:20px;
+}
+
+.path-card p,
+.blog-card p{
+  font-size:24px;
+  color:#bdc7cf;
+  margin-bottom:30px;
+}
+
+.blog-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:22px;
+  margin-bottom:20px;
+}
+
+footer{
+  background:#050c11;
+  border-top:1px solid rgba(104,240,225,.25);
+  padding:50px 0;
+  text-align:center;
+  color:#c8d4db;
+}
+
+.socials{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-bottom:30px;
+  flex-wrap:wrap;
+}
+
+.socials a{
+  font-size:22px;
+  color:#68f0e1;
+  font-weight:bold;
+}
+
+@media(max-width:900px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:55px;
+  }
+
+  .section h2{
+    font-size:45px;
+  }
+
+  .logo-text{
+    font-size:24px;
+  }
+
+  .menu{
+    font-size:20px;
+    padding:12px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">
+      <div class="logo-icon">+</div>
+      <div class="logo-text">
+        VitalPath Care<br>Group LLC
+      </div>
+    </div>
+
+    <div class="menu">☰ Menu</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+
+    <div class="hero-small">
+      Education-First Care Support Platform
+    </div>
+
+    <h1>VitalPath Care Group</h1>
+
+    <p>
+      Care support education, intake coordination,
+      transportation information, healthcare resources,
+      and community support.
+    </p>
+
+    <a class="button">Start a Request</a>
+    <a class="button dark">Explore Learning Center</a>
+    <a class="button dark">Worker Interest</a>
+
+    <div class="card logo-card">
+      <div class="big-cross">+</div>
+      <h2>VITALPATH</h2>
+      <p>CARE GROUP</p>
+    </div>
+
+    <div class="card small-card">
+      <h3>Library</h3>
+      <p>Learning first</p>
+    </div>
+
+    <div class="card small-card">
+      <h3>Intake</h3>
+      <p>Organized requests</p>
+    </div>
+
+    <div class="card small-card">
+      <h3>Safety</h3>
+      <p>Clear limits</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-title">
+      What VitalPath Is Built To Organize
+    </div>
+
+    <h2>
+      Clear pathways for families,
+      workers and transportation support.
+    </h2>
+
+    <div class="grid">
+
+      <div class="card path-card">
+        <div class="icon-box">F</div>
+        <h3>Family Support Intake</h3>
+        <p>Organize support needs and questions.</p>
+        <a class="button">Open Family Form</a>
+      </div>
+
+      <div class="card path-card">
+        <div class="icon-box">W</div>
+        <h3>Care Professional Interest</h3>
+        <p>Collect worker interest information.</p>
+        <a class="button">Worker Interest</a>
+      </div>
+
+      <div class="card path-card">
+        <div class="icon-box">T</div>
+        <h3>Transportation Interest</h3>
+        <p>Prepare transportation requests.</p>
+        <a class="button">Transportation Form</a>
+      </div>
+
+      <div class="card path-card">
+        <div class="icon-box">L</div>
+        <h3>Learning Center</h3>
+        <p>Educational resources and guides.</p>
+        <a class="button">Start Learning</a>
+      </div>
+
+      <div class="card path-card">
+        <div class="icon-box">A</div>
+        <h3>Weekly Articles</h3>
+        <p>Professional education content.</p>
+        <a class="button">Read Articles</a>
+      </div>
+
+      <div class="card path-card">
+        <div class="icon-box">N</div>
+        <h3>VitalPath News</h3>
+        <p>Healthcare awareness and company updates.</p>
+        <a class="button">Read News</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-title">
+      Latest From Our Blog
+    </div>
+
+    <h2>
+      Healthcare Education & Community Articles
+    </h2>
+
+    <div class="grid">
+
+      <div class="card blog-card">
+        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80">
+        <h3>Preparing to Care for Aging Parents</h3>
+        <p>Important steps families should know before organizing care support.</p>
+        <a class="button">Read Article</a>
+      </div>
+
+      <div class="card blog-card">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80">
+        <h3>Senior Transportation Tips</h3>
+        <p>Helping loved ones travel safely to appointments and community services.</p>
+        <a class="button">Read Article</a>
+      </div>
+
+      <div class="card blog-card">
+        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=900&q=80">
+        <h3>Reducing Caregiver Stress</h3>
+        <p>Simple wellness strategies for families, workers, and caregivers.</p>
+        <a class="button">Read Article</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="socials">
+    <a href="#">📘 Facebook</a>
+    <a href="#">📸 Instagram</a>
+    <a href="#">💼 LinkedIn</a>
+  </div>
+
+  <p>
+    © 2026 VitalPath Care Group LLC.
+    All Rights Reserved.
+  </p>
+</footer>
+
+<script>
+const backgrounds = [
+  "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1600&q=80"
+];
+
+const today = new Date().getDate();
+const selectedBackground = backgrounds[today % backgrounds.length];
+
+document.querySelector(".hero").style.backgroundImage = `url('${selectedBackground}')`;
+
+document.querySelector(".menu").addEventListener("click", function(){
+  alert("Menu will be connected to full navigation next.");
+});
+</script>
+
+</body>
+</html>
