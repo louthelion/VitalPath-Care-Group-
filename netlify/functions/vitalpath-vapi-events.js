@@ -7,8 +7,8 @@ const {timingSafeEqual}=require('node:crypto');
 const URL='https://gluvpnusvgfkfcwutdbk.supabase.co';
 const reply=(statusCode,body)=>({statusCode,headers:{'content-type':'application/json','cache-control':'no-store'},body:JSON.stringify(body)});
 const equal=(a,b)=>{const x=Buffer.from(a),y=Buffer.from(b);return x.length===y.length&&timingSafeEqual(x,y);};
-const post=async(path,body,key)=>{
- const r=await fetch(URL+'/rest/v1/'+path,{method:'POST',headers:{apikey:key,authorization:'Bearer '+key,'content-type':'application/json',prefer:'resolution=merge-duplicates,return=representation'},body:JSON.stringify(body),signal:AbortSignal.timeout(7000)});
+const post=async(path,body,key,ignoreDuplicates=false)=>{
+ const r=await fetch(URL+'/rest/v1/'+path,{method:'POST',headers:{apikey:key,authorization:'Bearer '+key,'content-type':'application/json',prefer:(ignoreDuplicates?'resolution=ignore-duplicates,return=representation':'resolution=merge-duplicates,return=representation')},body:JSON.stringify(body),signal:AbortSignal.timeout(7000)});
  if(!r.ok)throw Error('database_write_failed');
  return r.json();
 };
@@ -46,7 +46,7 @@ exports.handler=async(event)=>{
   if(!Array.isArray(rows)||rows.length!==1||!Number.isInteger(rows[0].id))throw Error('event_not_recorded');
   // Every completed call becomes a minimal, unassigned review task.
   // No recording, transcript, caller phone, or health information is stored.
-  if(kind==='call_ended')await post('vp_call_followups?on_conflict=event_id',{event_id:rows[0].id,task_status:'pending'},key);
+  if(kind==='call_ended')await post('vp_call_followups?on_conflict=event_id',{event_id:rows[0].id,task_status:'pending'},key,true);
   return reply(200,{accepted:true});
  }catch{return reply(503,{error:'event_storage_unavailable'});}
 };
