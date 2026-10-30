@@ -4,6 +4,8 @@ on:
     paths:
       - 'request-services.html'
       - 'tests/future-interest-safety.test.cjs'
+      - 'tests/future-interest-intake.test.cjs'
+      - 'lib/future-interest-intake.cjs'
       - '.github/workflows/future-interest-safety.yml'
   push:
     branches:
@@ -11,6 +13,8 @@ on:
     paths:
       - 'request-services.html'
       - 'tests/future-interest-safety.test.cjs'
+      - 'tests/future-interest-intake.test.cjs'
+      - 'lib/future-interest-intake.cjs'
       - '.github/workflows/future-interest-safety.yml'
 permissions:
   contents: read
@@ -23,4 +27,4 @@ jobs:
         with:
           node-version: '22'
       - name: Verify future-interest form safety
-        run: node --test tests/future-interest-safety.test.cjs
+        run: node --test tests/future-interest-safety.test.cjs tests/future-interest-intake.test.cjs
