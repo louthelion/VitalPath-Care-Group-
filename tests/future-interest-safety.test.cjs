@@ -10,6 +10,7 @@ test('page clearly identifies itself as future interest',()=>{
   assert.match(html,/not (?:currently )?(?:taking|accepting).*?(?:bookings|deposits)/i);
 });
 test('future-interest Netlify form has consent and spam defense',()=>{
+  assert.match(html, /action="\/confirmation"/i);
   assert.match(html,/<form\b[^>]*name="vitalpath-future-service-interest"[^>]*method="POST"[^>]*data-netlify="true"[^>]*netlify-honeypot="bot-field"/i);
   assert.match(html,/name="form-name" value="vitalpath-future-service-interest"/);
   assert.match(html,/name="bot-field"/);
