@@ -16,3 +16,4 @@ test('rejects missing or invalid provider ID',()=>{for(const id of ['', 'a','bad
 test('rejects oversized message',()=>{const x=base();x.fields.message='x'.repeat(2001);assert.throws(()=>normalize(x));});
 test('rejects invalid email',()=>{const x=base();x.fields.email='not-an-email';assert.throws(()=>normalize(x));});
 test('rejects unknown fields and arrays',()=>{const x=base();x.fields.payment='100';assert.throws(()=>normalize(x));const y=base();y.fields.full_name=['Alice'];assert.throws(()=>normalize(y));});
+test('rejects consent arrays and non-string consent values',()=>{for(const value of [['on'],true,1,{toString:()=> 'on'}]){const x=base();x.fields.consent=value;assert.throws(()=>normalize(x));}});
