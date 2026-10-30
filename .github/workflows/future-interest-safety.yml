@@ -1,0 +1,26 @@
+name: VitalPath future-interest safety checks
+on:
+  pull_request:
+    paths:
+      - 'request-services.html'
+      - 'tests/future-interest-safety.test.cjs'
+      - '.github/workflows/future-interest-safety.yml'
+  push:
+    branches:
+      - review/website-readiness-2026-10-03
+    paths:
+      - 'request-services.html'
+      - 'tests/future-interest-safety.test.cjs'
+      - '.github/workflows/future-interest-safety.yml'
+permissions:
+  contents: read
+jobs:
+  safety:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify future-interest form safety
+        run: node --test tests/future-interest-safety.test.cjs
